@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            Assigment 2, Eydie Johnson
+        </title>
+
+        <style>
+            .row{
+                width:720px;
+                margin:10px auto 10px auto;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    </head>
+
+    <body style="background-color: white">
+
+        <div class="row">
+            <div class="image-container"><img id="co2" src="img/CO2_1.png" onmouseover="this.src='img/CO2_2.png' ;" onmouseout="this.src='img/CO2_1.png'" width="200" height="200"/></div>
+            <div class="image-container"><img id="rain" src="img/rain1.png" onmouseover="this.src='img/rain2.png' ;" onmouseout="this.src='img/rain1.png'" width="200" height="200"/></div>
+            <div class="image-container"><img id="cloud" src="img/cloud1.png" onmouseover="this.src='img/cloud2.png' ;" onmouseout="this.src='img/cloud1.png'" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="waves" src="img/waves1.png" onmouseover="this.src='img/waves2.png' ;" onmouseout="this.src='img/waves1.png'" width="200" height="200"/></div>
+            <div class="image-container"><img id="wind" src="img/wind1.png" onmouseover="this.src='img/wind2.png' ;" onmouseout="this.src='img/wind1.png'" width="200" height="200"/></div>
+            <div class="image-container"><img id="sun" src="img/sun1.png" onmouseover="this.src='img/sun2.png' ;" onmouseout="this.src='img/sun1.png'" width="200" height="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="thermom" src="img/thermom1.png" onmouseover="this.src='img/thermom2.png' ;" onmouseout="this.src='img/thermom1.png'" width="200" height="200"/></div>
+            <div class="image-container"><img id="cyc" src="img/cyc1.png" onmouseover="this.src='img/cyc2.png' ;" onmouseout="this.src='img/cyc1.png'" width="200" height="200"/></div>
+            <div class="image-container"><img id="umbrel" src="img/umbrel1.png" onmouseover="this.src='img/umbrel2.png' ;" onmouseout="this.src='img/umbrel1.png'" width="200" height="200"/></div>
+        </div>
+
+
+        <script>
+            var sound1 = new buzz.sound("sounds/sound1.mp3");
+            var sound2 = new buzz.sound("sounds/sound2.mp3");
+            var sound3 = new buzz.sound("sounds/sound3.mp3");
+            var sound4 = new buzz.sound("sounds/sound4.mp3");
+            var sound5 = new buzz.sound("sounds/sound5.mp3");
+            var sound6 = new buzz.sound("sounds/sound6.mp3");
+            var sound7 = new buzz.sound("sounds/sound7.mp3");
+            var sound8 = new buzz.sound("sounds/sound8.mp3");
+            var sound9 = new buzz.sound("sounds/sound9.mp3");
+
+            window.onload = function() {
+                document.getElementById('co2').addEventListener('mouseover', function () {sound1.play();});
+                document.getElementById('rain').addEventListener('mouseover',function () {sound2.play();});
+                document.getElementById('cloud').addEventListener('mouseover',function () {sound3.play();});
+                document.getElementById('waves').addEventListener('mouseover',function () {sound4.play();});
+                document.getElementById('wind').addEventListener('mouseover',function () {sound5.play();});
+                document.getElementById('sun').addEventListener('mouseover',function () {sound6.play();});
+                document.getElementById('thermom').addEventListener('mouseover',function () {sound7.play();});
+                document.getElementById('cyc').addEventListener('mouseover',function () {sound8.play();});
+                document.getElementById('umbrel').addEventListener('mouseover',function () {sound9.play();});
+            };
+
+        </script>
+
+    </body>
+
+</html>
